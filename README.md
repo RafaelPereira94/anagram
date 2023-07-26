@@ -20,19 +20,19 @@ git clone https://github.com/RafaelPereira94/anagram.git
 
 To run the Java Main function, use the following Maven command in your terminal or command prompt:
 
-mvn compile exec:java -Dexec.mainClass=pt.rafael.Main
+`mvn compile exec:java -Dexec.mainClass=pt.rafael.Main`
 
 ### 2. Kotlin Main Function (Main.kt)
 
 To run the Kotlin Main function, use the following Maven command in your terminal or command prompt:
 
-mvn compile exec:java -Dexec.mainClass=pt.rafael.MainKt
+`mvn compile exec:java -Dexec.mainClass=pt.rafael.MainKt`
 
 ## Building the Project
 
 To build the entire project and create the target artifacts (JAR files), use the following Maven command in your terminal or command prompt:
 
-mvn clean package
+`mvn clean package`
 
 This command will compile both Kotlin and Java sources, run the tests, and package the project. The built JAR files will be located in the `target` directory.
 
@@ -40,7 +40,7 @@ This command will compile both Kotlin and Java sources, run the tests, and packa
 
 To execute the tests for both Kotlin and Java, use the following Maven command in your terminal or command prompt:
 
-mvn test
+`mvn test`
 
 
 ## Future work that could be done:

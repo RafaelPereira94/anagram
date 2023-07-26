@@ -4,6 +4,10 @@ This project contains the implementation of an anagram checker for words and tex
 
 In Java and kotlin.
 
+# Requirements:
+- Java 17
+- Maven
+
 ## Cloning the Project
 
 To clone this project, use the following command in your terminal or command prompt:
@@ -37,3 +41,9 @@ This command will compile both Kotlin and Java sources, run the tests, and packa
 To execute the tests for both Kotlin and Java, use the following Maven command in your terminal or command prompt:
 
 mvn test
+
+
+## Future work that could be done:
+
+In our algorithm instead of using a `Map<Character, Integer>` we could use the guava data structure
+`Multiset<T>` that can be used to count the occurrences of elements in a collection.

@@ -61,9 +61,7 @@ public class AnagramCheckerTest {
 
     @Test
     public void testOneTextIsNullShouldThrowException() {
-        assertThrows(NullPointerException.class, () -> {
-            AnagramChecker.areAnagrams(null, "soul");
-        });
+        assertThrows(NullPointerException.class, () -> AnagramChecker.areAnagrams(null, "soul"));
     }
 
 }

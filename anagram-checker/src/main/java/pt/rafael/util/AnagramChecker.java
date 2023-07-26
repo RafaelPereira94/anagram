@@ -30,16 +30,16 @@ public class AnagramChecker {
             return false;
         }
 
-        text1 = text1.toLowerCase();
-        text2 = text2.toLowerCase();
+        String text1ToLowercase = text1.toLowerCase();
+        String text2ToLowercase = text2.toLowerCase();
 
         Map<Character, Integer> letterCount = new HashMap<>();
 
-        for (char c : text1.toCharArray()) {
+        for (char c : text1ToLowercase.toCharArray()) {
             letterCount.put(c, letterCount.getOrDefault(c, 0) + 1);
         }
 
-        for (char c : text2.toCharArray()) {
+        for (char c : text2ToLowercase.toCharArray()) {
             int value = letterCount.getOrDefault(c, 0);
             if (value == 0) { //letter doesn't match any of the word from text1, so they are not anagrams.
                 return false;

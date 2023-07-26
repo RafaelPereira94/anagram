@@ -3,6 +3,15 @@ package pt.rafael.util;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * The AnagramChecker class provides a utility method to check if two texts are anagrams of each other.
+ * Anagrams are words or phrases formed by rearranging the letters of another word or phrase.
+ * The comparison is case-insensitive, considering both texts in lowercase.
+ *
+ * @author [Rafael]
+ * @version 1.0
+ * @since [26/07/2023]
+ */
 public class AnagramChecker {
 
     /**
